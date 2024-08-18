@@ -34,7 +34,7 @@ const page = () => {
 
                 </TabsList>
                 <TabsContent value='about'>
-                    <h6>Who I'm</h6>
+                    <h6>Who Im</h6>
                     <p className='text-accent-foreground mt-2'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa ea excepturi, tempora esse tenetur enim cum debitis architecto in, mollitia consectetur? Natus accusantium quam doloremque adipisci voluptatibus ducimus quos.
                     </p>

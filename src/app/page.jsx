@@ -36,8 +36,8 @@ const Home = () => {
         </a>
         <div className="flex items-center gap-x-3 md:absolute bottom-6 left-2">
           {SOCIAL_MEDIA.map((item, i) => {
-            return <a href={item.link} >
-              <MotionImage key={item.id} src={item.icon} alt={item.name}
+            return <a href={item.link} key={item.id}>
+              <MotionImage src={item.icon} alt={item.name}
                 whileHover={{ scale: 1.1 }} initial={'initial'} animate={'animate'} variants={variants.moveUp} transition={{
                   ...transition.moveUp,
                   delay: i * 0.3
