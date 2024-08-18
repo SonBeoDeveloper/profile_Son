@@ -11,7 +11,6 @@ const paci = Dancing_Script({
 const Home = () => {
   return (
     <div className='h-dvh flex overflow-hidden md:flex-row flex-col items-center justify-between pt-5 w-full'>
-
       <div className="flex flex-col h-full justify-center space-y-6 md:items-end items-center relative max-w-xl md:ml-auto flex-1">
         <MotionDiv initial="initial" animate="animate" className='absolute flex items-center gap-x-4 -rotate-90 md:-left-8 -left-28  md:top-auto top-96 text-accent-foreground' variants={variants.rise} transition={transition.rise}>
 
@@ -29,17 +28,21 @@ const Home = () => {
         </MotionDiv>
         <MotionDiv initial={'initial'} animate="animate" variants={variants.moveRight} transition={transition.moveRight}
           className={cn("md:text-right text-center", paci.className)}>
-          <h1>Hoài<br /><span>Sơn .</span></h1>
+          <h1>Hoài <span>Sơn .</span></h1>
         </MotionDiv>
         <br />
-        <MotionButton whileHover={{ scale: 0.95 }} initial="initial" animate="animate" variants={variants.moveUp} transition={variants.moveUp}>Download CV</MotionButton>
+        <a href="/porfolio.pdf" download>
+          <MotionButton whileHover={{ scale: 0.95 }} initial="initial" animate="animate" variants={variants.moveUp} transition={variants.moveUp}>Download CV</MotionButton>
+        </a>
         <div className="flex items-center gap-x-3 md:absolute bottom-6 left-2">
           {SOCIAL_MEDIA.map((item, i) => {
-            return <MotionImage key={item.id} src={item.icon} alt={item.name}
-              whileHover={{ scale: 1.1 }} initial={'initial'} animate={'animate'} variants={variants.moveUp} transition={{
-                ...transition.moveUp,
-                delay: i * 0.3
-              }} height={25} width={25} className='object-cover cursor-pointer max-h-full' />
+            return <a href={item.link} >
+              <MotionImage key={item.id} src={item.icon} alt={item.name}
+                whileHover={{ scale: 1.1 }} initial={'initial'} animate={'animate'} variants={variants.moveUp} transition={{
+                  ...transition.moveUp,
+                  delay: i * 0.3
+                }} height={25} width={25} className='object-cover cursor-pointer max-h-full' />
+            </a>
           })}
         </div>
       </div>
