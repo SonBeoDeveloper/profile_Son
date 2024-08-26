@@ -8,11 +8,11 @@ export const ROUTES = Object.freeze([{
     name: 'Resume',
     path: '/resume'
 },
-{
-    id: 3,
-    name: 'Services',
-    path: '/services'
-},
+// {
+//     id: 3,
+//     name: 'Services',
+//     path: '/services'
+// },
 {
     id: 4,
     name: 'Projects',
@@ -75,18 +75,43 @@ export const SERVICES = Object.freeze([
 export const PROJECTS = Object.freeze([
     {
         id: 1,
-        title: 'Docter site',
-        desc: 'This is doctor site created using nextjs and tailwindcss',
+        title: 'Zoom clone',
+        desc: 'This is zoom clone using nextjs, CLERK, STREAM and tailwindcss',
         category: 'Fullstack development',
         image: '/pro1.png',
-        stack: ['React js', 'Express js', "MongoDB"]
+        stack: ['Next js', 'CLERK', "STREAM"],
+        link: 'https://zoom-clone-blond.vercel.app/',
+        github: 'https://github.com/SonBeoDeveloper/zoom_clone'
     },
     {
         id: 2,
-        title: 'E-comerce site',
-        desc: 'This is doctor site created using nextjs and tailwindcss',
+        title: 'Order Application for Thien Anh Restaurant',
+        desc: 'Thien Anh Restaurant Ordering App',
         category: 'Fullstack development',
         image: '/pro2.png',
-        stack: ['React js', 'Express js', "MongoDB"]
+        stack: ['React js', 'Express js', "MongoDB", "NodeJS", "React Native", "Redux"],
+        link: '',
+        github: 'https://github.com/SonBeoDeveloper/frontend_app_delivery'
+    },
+    {
+        id: 3,
+        title: 'Job Portal',
+        desc: 'Building Job Portal with React, Node, MongoDB, Express, Redux and Redux-Toolkit',
+        category: 'Fullstack development',
+        image: '/pro3.png',
+        stack: ['React js', 'Express js', "MongoDB", "NodeJS", "Redux"],
+        link: '',
+        github: ''
+    },
+    {
+        id: 4,
+        title: 'Chat app',
+        desc: 'Chat app using MERN',
+        category: 'Fullstack development',
+        image: '/pro4.png',
+        stack: ['React js', 'Express js', "MongoDB", "NodeJS", "Redux", "Redux-toolkit"],
+        link: '',
+        github: 'https://github.com/SonBeoDeveloper/chat-app'
+
     }
 ])

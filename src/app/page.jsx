@@ -24,7 +24,7 @@ const Home = () => {
             }}>
             <div className="size-3 rounded-full bg-accent-foreground"></div>
           </MotionDiv>
-          <h4 className='text-2xl'>Designer</h4>
+          <h4 className='text-2xl'>Web Developer</h4>
         </MotionDiv>
         <MotionDiv initial={'initial'} animate="animate" variants={variants.moveRight} transition={transition.moveRight}
           className={cn("md:text-right text-center", paci.className)}>

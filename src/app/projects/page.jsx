@@ -9,7 +9,6 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import { Button } from '@/components/ui/button'
 const Contact = () => {
     const [currentProject, setCurrentProject] = useState(PROJECTS[0])
     const [swiper, setSwiper] = useState(null)
@@ -18,12 +17,7 @@ const Contact = () => {
     }
     // get current index
     const index = PROJECTS.findIndex((project) => project.title == currentProject.title) + 1
-    const nextTo = () => {
-        swiper.slideNext()
-    }
-    const prew = () => {
-        swiper.slidePrev()
-    }
+
     return (
         <div className="grid place-items-center lg:pt-0 sm:pt-32 pt-20 min-h-screen container">
             <div className="mt-12">
@@ -46,25 +40,33 @@ const Contact = () => {
                         <div className="flex gap-x-3">
                             <TooltipProvider delayDuration={200}>
                                 <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <button className='bg-accent p-2.5 rounded-full'>
-                                            <Image src={'/GitHub.svg'} alt="github" width={40} height={40} />
-                                        </button>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>GitHub</p>
-                                    </TooltipContent>
+                                    <a href={`${currentProject?.github}`}>
+                                        <TooltipTrigger asChild>
+                                            <button className='bg-accent p-2.5 rounded-full'>
+                                                <Image src={'/GitHub.svg'} alt="github" width={40} height={40} />
+                                            </button>
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>GitHub</p>
+                                        </TooltipContent>
+                                    </a>
+
                                 </Tooltip>
-                                <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <button className='bg-accent p-2.5 rounded-full'>
-                                            <Image src={'/open.svg'} alt="live preview" width={40} height={40} />
-                                        </button>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Live Preview</p>
-                                    </TooltipContent>
-                                </Tooltip>
+                                {currentProject?.link && (
+                                    <Tooltip>
+                                        <a href={`${currentProject.link}`} target="_blank" rel="noopener noreferrer">
+                                            <TooltipTrigger asChild>
+                                                <button className='bg-accent p-2.5 rounded-full'>
+                                                    <Image src={'/open.svg'} alt="live preview" width={40} height={40} />
+                                                </button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Live Preview</p>
+                                            </TooltipContent>
+                                        </a>
+                                    </Tooltip>
+                                )}
+
                             </TooltipProvider>
                         </div>
                     </div>
@@ -81,7 +83,7 @@ const Contact = () => {
                             className='w-full md:max-w-lg max-w-[250px]' onSlideChange={onSlideChange} onSwiper={(s) => setSwiper(s)}>
                             {PROJECTS.map((project, i) => (
                                 <SwiperSlide key={project.id} className={cn(index - 1 !== i && 'opacity-45')}>
-                                    <Image src={project.image} alt={project.title} width={300} height={300} className='object-contain' />
+                                    <Image src={project.image} alt={project.title} width={10000000000} height={10000000000} style={{ width: '1200px', height: '400px' }} className='object-contain pl-50' />
                                 </SwiperSlide>
                             ))}
                         </Swiper>

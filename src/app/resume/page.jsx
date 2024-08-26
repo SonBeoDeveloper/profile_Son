@@ -18,7 +18,7 @@ const page = () => {
                         <h5>Quảng Ninh, Việt Nam</h5>
                     </MotionDiv>
                 </div>
-                <MotionButton initial="initial" animate="animate" variants={variants.moveDown} transition={transition.moveDown} variant="outline" size="lg">Junior UI/UX Designer</MotionButton>
+                <MotionButton initial="initial" animate="animate" variants={variants.moveDown} transition={transition.moveDown} variant="outline" size="lg">Junior Javascript Developer</MotionButton>
             </div>
             <MotionTabs
                 initial="initial"
@@ -36,28 +36,56 @@ const page = () => {
                 <TabsContent value='about'>
                     <h6>Who Im</h6>
                     <p className='text-accent-foreground mt-2'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa ea excepturi, tempora esse tenetur enim cum debitis architecto in, mollitia consectetur? Natus accusantium quam doloremque adipisci voluptatibus ducimus quos.
+                        Full name: Nguyễn Hoài Sơn, Date of birth: 15/02/2001.
                     </p>
                     <p className='text-accent-foreground mt-2'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus numquam autem aspernatur in quisquam vel hic aliquam optio est voluptates. Provident quisquam incidunt praesentium modi ullam dignissimos expedita quam recusandae!
+                        I study at the University of Transport Technology, majoring in Information Technology.
                     </p>
                 </TabsContent>
                 <TabsContent value='skills'>
                     <h6>What i can do</h6>
                     <p className='text-accent-foreground mt-2'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa ea excepturi, tempora esse tenetur enim cum debitis architecto in, mollitia consectetur? Natus accusantium quam doloremque adipisci voluptatibus ducimus quos.
+                        Languages: javaScript, HTML/CSS, typeScript
                     </p>
                     <p className='text-accent-foreground mt-2'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus numquam autem aspernatur in quisquam vel hic
+                        FrameWorks: ReactJS, React Native, Node.js, Material-UI, Redux, mySql, NextJS
+                    </p>
+                    <p className='text-accent-foreground mt-2'>
+                        Developer Tools: Git, VS Code, Figma, Postman
+                    </p>
+                    <p className='text-accent-foreground mt-2'>
+                        English: 550 TOEIC
                     </p>
                 </TabsContent>
                 <TabsContent value='experience'>
                     <h6>My works</h6>
                     <p className='text-accent-foreground mt-2'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa ea excepturi, tempora esse tenetur enim cum debitis architecto in, mollitia consectetur? Natus accusantium quam doloremque adipisci voluptatibus ducimus quos.
+                        CE Group - Đào tạo Lập trình viên quốc tế
+                        10/2022 - 01/20212
+                        Tham gia khóa học lập trình reactJS
                     </p>
                     <p className='text-accent-foreground mt-2'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus numquam autem aspernatur in quisquam vel hic
+                        Công ty Sao Mai Solution Group
+                        02/2023 - 09/2023
+                        Tham gia xây dựng website Shopyfy
+                        Học và đào tạo thêm ngôn ngữ nodeJs và mySQL
+                        Công nghệ sử dụng: React, nodeJS, mySQL
+                        Tham gia xây dựng website bán hàng
+                        Công nghệ sử dụng: ReactJS, nodeJS
+                    </p>
+                    <p className='text-accent-foreground mt-2'>
+                        Công ty NCC
+                        03/2024 - 05/2024
+                        Tham gia xây dựng website và mobile Discord cho nội bộ công ty NCC.
+                        Công nghệ sử dụng: React, nodejs, ReactNatie, redux ,...
+
+                    </p>
+                    <p className='text-accent-foreground mt-2'>
+                        Đồ án tốt nghiệp
+                        10/2023 - 12/2023
+                        Xây dựng app bán hàng cho nhà hàng Thiên Anh
+                        Công nghệ sử dụng: React, React-native, mongoDB, nodeJS, redux
+
                     </p>
                 </TabsContent>
             </MotionTabs>
