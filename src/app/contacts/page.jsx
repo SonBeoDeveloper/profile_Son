@@ -16,7 +16,7 @@ const page = () => {
                         <span>Contact</span> with me to <br /> you{""} <span>Project.</span>
                     </h3>
                     <p className='text-accent-foreground mt-5 w-3/4 mx-auto'>
-                        Great design, new generation ideas, use-centered projects.</p>
+                        Contact and send an email to hire me right away.</p>
                 </div>
                 <ContactForm />
 

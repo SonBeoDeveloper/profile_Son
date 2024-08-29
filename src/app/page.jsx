@@ -31,7 +31,7 @@ const Home = () => {
           <h1>Hoài <span>Sơn .</span></h1>
         </MotionDiv>
         <br />
-        <a href="/porfolio.pdf" download>
+        <a href="/CV.pdf" download>
           <MotionButton whileHover={{ scale: 0.95 }} initial="initial" animate="animate" variants={variants.moveUp} transition={variants.moveUp}>Download CV</MotionButton>
         </a>
         <div className="flex items-center gap-x-3 md:absolute bottom-6 left-2">

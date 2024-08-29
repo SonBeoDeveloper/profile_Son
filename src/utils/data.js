@@ -75,6 +75,17 @@ export const SERVICES = Object.freeze([
 export const PROJECTS = Object.freeze([
     {
         id: 1,
+        title: 'Message app clone',
+        desc: 'Message clone',
+        category: 'Fullstack development',
+        image: '/pro5.png',
+        stack: ['Nextjs', 'Convex', "Supabase", "Clerk", "Zustand"],
+        link: 'https://message-six-azure.vercel.app/',
+        github: 'https://github.com/SonBeoDeveloper/message'
+
+    },
+    {
+        id: 2,
         title: 'Zoom clone',
         desc: 'This is zoom clone using nextjs, CLERK, STREAM and tailwindcss',
         category: 'Fullstack development',
@@ -84,7 +95,7 @@ export const PROJECTS = Object.freeze([
         github: 'https://github.com/SonBeoDeveloper/zoom_clone'
     },
     {
-        id: 2,
+        id: 3,
         title: 'Order Application for Thien Anh Restaurant',
         desc: 'Thien Anh Restaurant Ordering App',
         category: 'Fullstack development',
@@ -94,7 +105,7 @@ export const PROJECTS = Object.freeze([
         github: 'https://github.com/SonBeoDeveloper/frontend_app_delivery'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Job Portal',
         desc: 'Building Job Portal with React, Node, MongoDB, Express, Redux and Redux-Toolkit',
         category: 'Fullstack development',
@@ -103,15 +114,4 @@ export const PROJECTS = Object.freeze([
         link: '',
         github: ''
     },
-    {
-        id: 4,
-        title: 'Chat app',
-        desc: 'Chat app using MERN',
-        category: 'Fullstack development',
-        image: '/pro4.png',
-        stack: ['React js', 'Express js', "MongoDB", "NodeJS", "Redux", "Redux-toolkit"],
-        link: '',
-        github: 'https://github.com/SonBeoDeveloper/chat-app'
-
-    }
 ])
