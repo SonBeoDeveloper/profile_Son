@@ -15,6 +15,8 @@ const Contact = () => {
     const onSlideChange = (item) => {
         setCurrentProject(PROJECTS[item?.activeIndex])
     }
+    console.log(currentProject);
+    
     // get current index
     const index = PROJECTS.findIndex((project) => project.title == currentProject.title) + 1
 
