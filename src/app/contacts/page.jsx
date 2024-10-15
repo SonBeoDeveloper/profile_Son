@@ -13,7 +13,7 @@ const page = () => {
                 className='z-10' initial="initial" animate="animate" variants={variants.moveUp} transition={transition.moveUp}>
                 <div className="text-center">
                     <h3>
-                        <span>Contact</span> with me to <br /> you{""} <span>Project.</span>
+                        <span>Contact</span> with me 
                     </h3>
                     <p className='text-accent-foreground mt-5 w-3/4 mx-auto'>
                         Contact and send an email to hire me right away.</p>

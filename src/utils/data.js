@@ -75,6 +75,17 @@ export const SERVICES = Object.freeze([
 export const PROJECTS = Object.freeze([
     {
         id: 1,
+        title: 'Project management clone',
+        desc: 'Project management with AWS',
+        category: 'Fullstack development',
+        image: '/pro7.png',
+        stack: ['Nextjs', 'NodeJS', "Redux", "EC2", "RDS","Postgres"],
+        link: 'https://main.d292f36jpfmzhm.amplifyapp.com/',
+        github: 'https://github.com/SonBeoDeveloper/project-management-with-AWS'
+
+    },
+    {
+        id: 2,
         title: 'Message app clone',
         desc: 'Message clone',
         category: 'Fullstack development',
@@ -85,7 +96,7 @@ export const PROJECTS = Object.freeze([
 
     },
     {
-        id: 2,
+        id: 3,
         title: 'Zoom clone',
         desc: 'This is zoom clone using nextjs, CLERK, STREAM and tailwindcss',
         category: 'Fullstack development',
@@ -95,7 +106,7 @@ export const PROJECTS = Object.freeze([
         github: 'https://github.com/SonBeoDeveloper/zoom_clone'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Shopify clone',
         desc: 'This is shopify clone using vite, reduxjs and tailwindcss',
         category: 'Fullstack development',
@@ -105,7 +116,7 @@ export const PROJECTS = Object.freeze([
         github: 'https://github.com/SonBeoDeveloper/shop/tree/main'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Order Application for Thien Anh Restaurant',
         desc: 'Thien Anh Restaurant Ordering App',
         category: 'Fullstack development',
@@ -115,7 +126,7 @@ export const PROJECTS = Object.freeze([
         github: 'https://github.com/SonBeoDeveloper/frontend_app_delivery'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Job Portal',
         desc: 'Building Job Portal with React, Node, MongoDB, Express, Redux and Redux-Toolkit',
         category: 'Fullstack development',
